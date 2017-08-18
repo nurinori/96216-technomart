@@ -97,7 +97,7 @@
               <img src="img/catalog-item.svg" width="100" height="100" alt="Перфоратор BOSH BFG 9000">
               <b>25500 Р.</b>
               <span class="old-price">32500 Р.</span>
-              <div class="modal">
+              <div class="modal-purchase">
                 <a href="#shopping-cart">Купить</a>
                 <a href="#bookmarks">В закладки</a>
               </div>
@@ -107,7 +107,7 @@
               <img src="img/catalog-item.svg" width="100" height="100" alt="Перфоратор BOSH BFG 3000">
               <b>15500 Р.</b>
               <span class="old-price">22500 Р.</span>
-              <div class="modal">
+              <div class="modal-purchase">
                 <a href="#shopping-cart">Купить</a>
                 <a href="#bookmarks">В закладки</a>
               </div>
@@ -117,7 +117,7 @@
               <img src="img/catalog-item.svg" width="100" height="100" alt="Перфоратор BOSH BFG 6000">
               <b>25500 Р.</b>
               <span class="old-price">30500 Р.</span>
-              <div class="modal">
+              <div class="modal-purchase">
                 <a href="#shopping-cart">Купить</a>
                 <a href="#bookmarks">В закладки</a>
               </div>
@@ -127,7 +127,7 @@
               <img src="img/catalog-item.svg" width="100" height="100" alt="Перфоратор BOSH BFG 2000">
               <b>12500 Р.</b>
               <span class="new"></span>
-              <div class="modal">
+              <div class="modal-purchase">
                 <a href="#shopping-cart">Купить</a>
                 <a href="#bookmarks">В закладки</a>
               </div>
@@ -204,8 +204,8 @@
           <p>
             Вы можете забрать товар сами, заехав в наш офис:
           </p>
-          <a href="#map.ru"></a>
-          <a href="#">Заблудились? Напишите нам!</a>
+          <a class="modal-map" href="#map.ru"></a>
+          <a class="modal-write-us" href="#">Заблудились? Напишите нам!</a>
         </div>
       </section>
       <section class="servises">
@@ -297,5 +297,45 @@
           <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </div>
     </footer>
+    <section class="modal modal-write-us">
+      <h2 class="hidden">Форма обратной связи</h2>
+      <form  action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="name">Ваше имя:</label>
+          <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста" required>
+        </p>
+        <p>
+          <label for="email">Ваш e-mail</label>
+          <input type="text" name="email" id="email" placeholder="Для отправки ответа" required>
+        </p>
+        <p>
+          <label for="text-question"></label>
+          <textarea name="text-question" id="text-question" placeholder="В свободной форме" required></textarea>
+        </p>
+        <input type="submit" value="Отправить">
+      </form>
+        <button class="modal-button">
+          <span class="hidden">Закрыть</span>
+        </button>
+    </section>
+    <section class="modal modal-map">
+      <h2 class="hidden">Как до нас добраться</h2>
+      <img src="img/map.svg" width="100" height="100" alt="Карта проезда">
+      <button class="modal-button">
+        <span class="hidden">Закрыть</span>
+      </button>
+    </section>
+    <section class="modal modal-purchase">
+      <p>
+        Товар добавлен в корзину!
+      </p>
+      <p>
+        <a href="#shopping-cart">Оформить заказ</a>
+        <a href="#">Продолжить покупки</a>
+      </p>
+      <button class="modal-button">
+        <span class="hidden">Закрыть</span>
+      </button>
+    </section>
   </body>
 </html>
