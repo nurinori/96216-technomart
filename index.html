@@ -2,11 +2,16 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
     <header class="main-header">
-      <h1>Техномарт</h1>
+      <h1 class="hidden">Техномарт</h1>
+      <p>
+        <span class="hidden">Логотип магазина</span>
+        <b>Техномарт</b>
+      </p>
       <form class="search" method="get" action="https://echo.htmlacademy.ru">
         <label class="main-search" for="search"></label>
           <input type="text" name="main-search" id="search" placeholder="Поиск:">
@@ -93,11 +98,11 @@
       </section>
       <section class="popular">
         <section class="popular-items">
-          <h2>Популярные товары</h2>
+          <h2 class="popular-title">Популярные товары</h2>
           <a href="#catalog-popular-items">Все популярные товары</a>
           <ul class="popular-items-catalog">
             <li class="popular-item">
-              <h3>Перфоратор BOSH BFG 9000</h3>
+              <h3 class="popular-item-title">Перфоратор BOSH BFG 9000</h3>
               <img src="img/item-bfg9000.png" width="215" height="145" alt="Перфоратор BOSH BFG 9000">
               <b>25500 Р.</b>
               <span class="old-price">32500 Р.</span>
@@ -107,7 +112,7 @@
               </div>
             </li>
             <li class="popular-item">
-              <h3>Перфоратор BOSH BFG 3000</h3>
+              <h3 class="popular-item-title">Перфоратор BOSH BFG 3000</h3>
               <img src="img/item-bfg3000.png" width="215" height="145" alt="Перфоратор BOSH BFG 3000">
               <b>15500 Р.</b>
               <span class="old-price">22500 Р.</span>
@@ -117,7 +122,7 @@
               </div>
             </li>
             <li class="popular-item">
-              <h3>Перфоратор BOSH BFG 6000</h3>
+              <h3 class="popular-item-title">Перфоратор BOSH BFG 6000</h3>
               <img src="img/item-bfg6000.png" width="215" height="145" alt="Перфоратор BOSH BFG 6000">
               <b>25500 Р.</b>
               <span class="old-price">30500 Р.</span>
@@ -127,7 +132,7 @@
               </div>
             </li>
             <li class="popular-item">
-              <h3>Перфоратор BOSH BFG 2000</h3>
+              <h3 class="popular-item-title">Перфоратор BOSH BFG 2000</h3>
               <img src="img/item-bfg2000.png" width="215" height="145" alt="Перфоратор BOSH BFG 2000">
               <b>12500 Р.</b>
               <span class="new"></span>
@@ -139,7 +144,7 @@
           </ul>
         </section>
         <section class="popular-brands">
-          <h2>Популярные производители</h2>
+          <h2 class="popular-title">Популярные производители</h2>
           <a href="#catalog-popular-brands">Все производители</a>
           <ul class="popular-brands-catalog">
             <li>
@@ -213,14 +218,14 @@
         </div>
       </section>
       <section class="servises">
-        <h2>Сервисы</h2>
+        <h2 class="servises-title">Сервисы</h2>
         <p>
           Хороший интернет-магазин отличается от плохого не только ценами!<br>
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
         <ul class="servises-list">
           <li class="servises-description">
-            <h3>Доставка</h3>
+            <h3 class="servises-description-title">Доставка</h3>
             <p>
               Мы с удовольствием доставим ваш товар прямо
               к вашему подъезду совершенно бесплатно!
@@ -228,7 +233,7 @@
               поднимая его на ваш этаж!
             </p>
           <li class="servises-description">
-            <h3>Гарантия</h3>
+            <h3 class="servises-description-title">Гарантия</h3>
             <p>
               Если купленный у нас товар поломается или заискрит,
               а также в случае пожара, спровоцированного его возгаранием,
@@ -238,20 +243,13 @@
             </p>
           </li>
           <li class="servises-description">
-            <h3>Кредит</h3>
+            <h3 class="servises-description-title">Кредит</h3>
             <p>
               Залезть в долговую яму стало проще!
               Кредитные консультанты придут вам на помощь.
             </p>
           </li>
         </ul>
-        <div class="servises-item">
-          <h3>Доставка</h3>
-          <p>
-            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-            Ведь мы неплохо заработаем, поднимая его на ваш этаж!
-          </p>
-        </div>
       </section>
     </main>
     <footer class="footer-site">
