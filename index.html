@@ -7,10 +7,10 @@
   </head>
   <body>
     <header class="main-header">
-      <h1 class="hidden">Техномарт</h1>
+      <h1 class="visually-hidden">Техномарт</h1>
       <img src="img/logo-technomart.png" width="220" height="42" alt="Логотип магазина Техномарт">
       <form class="search" method="get" action="https://echo.htmlacademy.ru">
-        <label class="main-search" for="search"></label>
+        <label class="main-search visually-hidden" for="search">Поиск:</label>
           <input type="text" name="main-search" id="search" placeholder="Поиск:">
       </form>
       <ul class="main-menu">
@@ -65,6 +65,7 @@
     </header>
     <main class="container">
       <section class="promo">
+        <h2 class="visually-hidden">Промоматериалы</h2>
         <p class="promo-section">
           Материалы <a href="#catalog-stuff">на любой вкус</a>
         </p>
@@ -89,7 +90,7 @@
           <p class="promo-section">
             Дрели<br>
             Соседям на радость
-            <a href="catalog-punchers.html">Открыть каталог</a>
+            <a href="#catalog-drills">Открыть каталог</a>
           </p>
         </div>
       </section>
@@ -97,55 +98,53 @@
         <section class="popular-items">
           <h2 class="popular-title">Популярные товары</h2>
           <a href="#catalog-popular-items">Все популярные товары</a>
-          <ul class="popular-items-catalog">
-            <li class="popular-item">
-              <h3 class="popular-item-title">Перфоратор BOSH BFG 9000</h3>
-              <img src="img/item-bfg9000.jpg" width="218" height="160" alt="Перфоратор BOSH BFG 9000">
-              <b>25500 Р.</b>
-              <span class="old-price">32500 Р.</span>
-              <div class="modal-purchase">
-                <a href="#shopping-cart">Купить</a>
-                <a href="#bookmarks">В закладки</a>
+          <article class="product-item">
+            <h3 class="product-title">Перфоратор BOSH BFG 9000</h3>
+            <img src="img/item-bfg9000.jpg" width="218" height="160" alt="Перфоратор BOSH BFG 9000">
+            <b>25500 Р.</b>
+            <span class="old-price">32500 Р.</span>
+            <div class="modal-purchase">
+              <a href="#shopping-cart">Купить</a>
+              <a href="#bookmarks">В закладки</a>
               </div>
-            </li>
-            <li class="popular-item">
-              <h3 class="popular-item-title">Перфоратор BOSH BFG 3000</h3>
-              <img src="img/item-bfg3000.jpg" width="218" height="160" alt="Перфоратор BOSH BFG 3000">
-              <b>15500 Р.</b>
-              <span class="old-price">22500 Р.</span>
-              <div class="modal-purchase">
-                <a href="#shopping-cart">Купить</a>
-                <a href="#bookmarks">В закладки</a>
-              </div>
-            </li>
-            <li class="popular-item">
-              <h3 class="popular-item-title">Перфоратор BOSH BFG 6000</h3>
-              <img src="img/item-bfg6000.jpg" width="218" height="160" alt="Перфоратор BOSH BFG 6000">
-              <b>25500 Р.</b>
-              <span class="old-price">30500 Р.</span>
-              <div class="modal-purchase">
-                <a href="#shopping-cart">Купить</a>
-                <a href="#bookmarks">В закладки</a>
-              </div>
-            </li>
-            <li class="popular-item">
-              <h3 class="popular-item-title">Перфоратор BOSH BFG 2000</h3>
-              <img src="img/item-bfg2000.jpg" width="218" height="160" alt="Перфоратор BOSH BFG 2000">
-              <b>12500 Р.</b>
-              <span class="new"></span>
-              <div class="modal-purchase">
-                <a href="#shopping-cart">Купить</a>
-                <a href="#bookmarks">В закладки</a>
-              </div>
-            </li>
-          </ul>
+          </article>
+          <article class="product-item">
+            <h3 class="product-title">Перфоратор BOSH BFG 3000</h3>
+            <img src="img/item-bfg3000.jpg" width="218" height="160" alt="Перфоратор BOSH BFG 3000">
+            <b>15500 Р.</b>
+            <span class="old-price">22500 Р.</span>
+            <div class="modal-purchase">
+              <a href="#shopping-cart">Купить</a>
+              <a href="#bookmarks">В закладки</a>
+            </div>
+          </article>
+          <article class="product-item">
+            <h3 class="product-title">Перфоратор BOSH BFG 6000</h3>
+            <img src="img/item-bfg6000.jpg" width="218" height="160" alt="Перфоратор BOSH BFG 6000">
+            <b>25500 Р.</b>
+            <span class="old-price">30500 Р.</span>
+            <div class="modal-purchase">
+              <a href="#shopping-cart">Купить</a>
+              <a href="#bookmarks">В закладки</a>
+            </div>
+          </article>
+          <article class="product-item">
+            <h3 class="product-title">Перфоратор BOSH BFG 2000</h3>
+            <img src="img/item-bfg2000.jpg" width="218" height="160" alt="Перфоратор BOSH BFG 2000">
+            <b>12500 Р.</b>
+            <span class="new"></span>
+            <div class="modal-purchase">
+              <a href="#shopping-cart">Купить</a>
+              <a href="#bookmarks">В закладки</a>
+            </div>
+          </article>
         </section>
         <section class="popular-brands">
           <h2 class="popular-title">Популярные производители</h2>
           <a href="#catalog-popular-brands">Все производители</a>
           <ul class="popular-brands-catalog">
             <li>
-              <a href="#brand"><img src="img/logo-bosch.jpg" width="218" height="143"
+              <a href="#brand"><img src="img/logo-bosh.jpg" width="218" height="143"
                 alt="Логотип бренда BOSH"></a>
             </li>
             <li>
@@ -180,7 +179,7 @@
         </section>
       </section>
       <section class="delivery">
-        <h2 class="hidden">Преимущества доставки</h2>
+        <h2 class="visually-hidden">Преимущества доставки</h2>
         <div class="delivery-logistic">
           <h3 class="delivery-title">Компания &#171;Техномарт&#187;</h3>
           <p>
@@ -210,7 +209,9 @@
           <p>
             Вы можете забрать товар сами, заехав в наш офис:
           </p>
-          <a class="modal-map" href="#map.ru"></a>
+          <a class="modal-map" href="#map.ru">
+            <span class="visually-hidden">Карта проезда</span>
+          </a>
           <a class="modal-write-us" href="#">Заблудились? Напишите нам!</a>
         </div>
       </section>
@@ -244,6 +245,7 @@
             <p>
               Залезть в долговую яму стало проще!
               Кредитные консультанты придут вам на помощь.
+              <a href="#credits">Отправить заявку</a>
             </p>
           </li>
         </ul>
@@ -287,32 +289,44 @@
       <p class="footer-copyright">
         &#169; 2010–2017 Компания &#171;Техномарт&#187;<br>
         Все права защищены
-        </p>
+      </p>
       <ul class="footer-social">
         <li>
-          <a href="vk.com">Вконтакте</a>
+          <a href="vk.com">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
         </li>
         <li>
-          <a href="fb.com">Фейсбук</a>
+          <a href="fb.com">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
         </li>
         <li>
-          <a href="instagram.com">Инстаграм</a>
+          <a href="instagram.com">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
         </li>
         <li>
-          <a class="hidden" href="#"></a>
+          <a class="visually-hidden" href="#">
+            <span class="visually-hidden">Здесь будет еще одна соцсеть</span>
+          </a>
         </li>
       </ul>
       <div class="footer-mail">
+        <p>
           Обратная связь:
-          <a href="mail_to:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </p>
+        <a href="mail_to:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>
       <div class="footer-developer">
+        <p>
           Разработано –
-          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-        </div>
+        </p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+      </div>
     </footer>
     <section class="modal modal-write-us">
-      <h2 class="hidden">Форма обратной связи</h2>
+      <h2 class="visually-hidden">Форма обратной связи</h2>
       <form  action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="name">Ваше имя:</label>
@@ -323,20 +337,20 @@
           <input type="text" name="email" id="email" placeholder="Для отправки ответа" required>
         </p>
         <p>
-          <label for="text-question"></label>
+          <label for="text-question">Текст письма</label>
           <textarea name="text-question" id="text-question" placeholder="В свободной форме" required></textarea>
         </p>
         <input type="submit" value="Отправить">
       </form>
         <button class="modal-button">
-          <span class="hidden">Закрыть</span>
+          <span class="visually-hidden">Закрыть</span>
         </button>
     </section>
     <section class="modal modal-map">
-      <h2 class="hidden">Как до нас добраться</h2>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
       <img src="img/map.jpg" width="300" height="158" alt="Карта проезда">
       <button class="modal-button">
-        <span class="hidden">Закрыть</span>
+        <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
     <section class="modal modal-purchase">
@@ -348,7 +362,7 @@
         <a href="#">Продолжить покупки</a>
       </p>
       <button class="modal-button">
-        <span class="hidden">Закрыть</span>
+        <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
   </body>
