@@ -1,49 +1,572 @@
 body {
-  font-family: "PT Sans";
-  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum",  Arial, sans-serif;
+  font-size: 17px;
   font-weight: normal;
   line-height: 24px;
+  color: #ffffff;
+
+  background-color: #000000;
+}
+a {
+  text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+.main-header {
+  background-color: #f2f6f8;
+}
+.header-line {
+  background-color: #293449;
+}
+/*здесь будет замена картинок логотипа*/
+.main-header ul {
+  list-style: none;
+}
+.main-search input[type="text"],
+.main-search input[placeholder]{
+  background-color: #293449;
+  border: none;
+  font: inherit;
+  /*Почему не наследуются параметры шрифта из боди для плейсхолдера?
+  Его в таком общем виде нельзя стилизовать? Надо для каждого браузера прописывать?*/
+  color: #ffffff;
+}
+.main-menu a,
+.main-navigation,
+.main-navigation a{
+  color: #ffffff;
+}
+.main-menu li:last-of-type a{
+  background-color: #63a63e;
+}
+.main-menu a:hover,
+.main-menu a:focus{
+  outline: none;
+  background-color: #212a3a;
+}
+.main-menu li:last-of-type a:hover,
+.main-menu li:last-of-type a:focus {
+  background-color: #5fbb2d;
+}
+.main-menu a:active,
+.main-menu li:last-of-type a:active {
+  opacity: 0.6;
+}
+.main-header b {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: normal;
+  color: #ff5357;
+}
+.main-tel {
+  font-size: 21px;
+  line-height: 18px;
+  color: #fb463c;
+  border: 3px solid white;
+  text-align: center;
+}
+.main-address {
+  font-size: 14px;
+  color: #3d546e;
+  text-align: center;
+}
+.main-registration a{
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 21px;
+}
+.main-registration a:focus,
+.main-registration a:hover{
+  outline: none;
+  color: #ee3643;
+}
+.main-registration a:active{
+  opacity: 0.3;
   color: #000000;
 }
-.popular-title {
-  font-family: "Cuprum";
+.main-autorization a:first-child{
+  background-color: #ffffff;
+  font-size: 21px;
+  color: #000000;
+}
+.main-autorization a:nth-child(3),
+.main-autorization a:last-child{
+  font-size: 16px;
+  color: #32425c;
+  text-decoration: underline;
+  text-align: center;
+}
+.main-autorization a:nth-child(3):hover,
+.main-autorization a:last-child:hover,
+.main-autorization a:nth-child(3):focus,
+.main-autorization a:last-child:focus{
+  color: #ee3643;
+}
+/*.main-autorization a:first-child:hover,
+.main-autorization a:first-child:focus{
+}
+*/
+.main-autorization a:nth-child(3):active,
+.main-autorization a:last-child:active{
+  opacity: 0.3;
+  color: #32425c;
+}
+.main-autorization a:first-child:active{
+  opacity: 0.3;
+  color: #000000;
+}
+.main-navigation a{
+  background-color: #3d546e;
+  font-size: 17px;
+}
+.main-navigation a:hover,
+.main-navigation a:focus{
+  outline: none;
+  background-color: #293449;
+}
+.main-navigation a:active{
+  background-color: #1d2739;
+  color: rgba(255,255,255,0.5);
+}
+.container {
+  background-color: #ffffff;
+}
+.breadcrumbs {
+  list-style: none;
+  font-family: "PT Sans";
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+/*Не могу понять из стайлгайда, как должны вести себя кнопки в хлебных крошках
+при наведении и клике*/
+.punchers-background,
+.sorting{
+  background-color: #f2f6f8;
+}
+.punchers-background h1{
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.filters h2,
+.sorting h2{
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #000000;
+  line-height: 18px;
+  background-color: #f7f3ec;
+}
+.filters fieldset{
+  border: none;
+}
+.filters legend{
+  font-family: "PT Sans";
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+/*тут будет стилизация поля с ценой и ползунков*/
+.filter-brands label{
+  font-family: "PT Sans";
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.filter-power label{
+  font-family: "PT Sans";
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.filter-button{
+  font-family: "PT Sans";
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+}
+.sorting {
+  background-color: #f7f3ec;
+}
+.sorting ul{
+  list-style: none;
+}
+.sorting a{
+  font-family: "PT Sans";
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.sorting li:first-child a{
+  color: #ee3643;
+}
+.sorting li:nth-child(2) a,
+.sorting li:last-child a{
+  color: rgba(0,0,0,0.3);
+  border-bottom: 1px dashed #ee3643;
+}
+.sorting li a:hover,
+.sorting li a:focus{
+  color: #000000;
+  border-bottom: 1px solid #ee3643;
+}
+.promo article {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 30px;
+}
+.promo article:first-of-type {
+  background-color: #ffbf47;
+}
+.promo article:nth-of-type(2){
+  background-color: #3bbce3;
+}
+.promo article:nth-of-type(3){
+  background-color: #dc91d8;
+}
+.promo article:nth-of-type(4){
+  background-color: #8ed78f;
+}
+.promo article:last-of-type{
+  background-color: #ffc047;
+}
+.promo a{
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgba(229,229,229,0.1);
+}
+.promo a:hover,
+.promo a:focus {
+  background-color: rgba(229,229,229,0.2);
+  outline: none;
+}
+.promo a:active {
+  background-color: rgba(229,229,229,0.3);
+  outline: none;
+}
+/*Здесь будет код для слайдера*/
+
+.popular-background {
+  background-color: #f9f5f0;
+}
+.popular-background h2 {
   font-size: 30px;
   font-weight: normal;
   line-height: 30px;
+  text-transform: uppercase;
   color: #3d546e;
 }
-.servises-title, .puncher-title {
-  font-family: "Cuprum";
-  font-size: 30px;
-  font-weight: normal;
-  line-height: 24px;
-  color: #000000;
+/*Почему этот заголовок в хроме выглядит жирнее, чем в макете?
+Хотя font-weight указан*/
+
+/*Конкретно для нижеследующих ссылок стайлгайда нет, но кнопки в слайдере
+выглядят точно так же, поэтому я взяла стилизацию по аналогии, и тут расхождения
+по цвету и высоте строки с основным макетом*/
+.popular-background a{
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #ee3643;
+  color: #ffffff;
 }
-.filters-title, .sorting-title {
-  font-family: "PT Sans";
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 18px;
-  color: #000000;
+.popular-background a:hover,
+.popular-background a:focus {
+  background-color: #ca2c37;
+  outline: none;
 }
-.product-title {
+.popular-background a:active {
+  background-color: #ba2732;
+  outline: none;
+}
+.product-item h3 {
   font-family: "PT Sans";
   font-size: 18px;
   font-weight: bold;
-  line-height: 20px;
   color: #000000;
+  text-align: center;
 }
-.delivery-title {
-  font-family: "Cuprum";
+.old-price {
+  font-family: "PT Sans";
+  font-size: 17px;
+  font-weight: bold;
+  color: #a9a9a9;
+  text-align: center;
+  text-decoration: line-through;
+}
+.product-item b{
+  font-family: "PT Sans";
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #ee3643;
+}
+.product-item img:hover {
+  /*здесь будет рамочка при наведении*/
+}
+.modal-purchase a:first-of-type{
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #63a63e;
+  color: #ffffff;
+}
+.modal-purchase a:last-of-type{
+  font-size: 14px;
+  color: #32425c;
+  text-transform: uppercase;
+  border: 3px solid #63a63e;
+}
+.modal-purchase a:first-of-type:hover,
+.modal-purchase a:first-of-type:focus {
+  background-color: #5fbb2d;
+  outline: none;
+}
+.modal-purchase a:first-of-type:active{
+  background-color: #518534;
+}
+.modal-purchase a:last-of-type:hover,
+.modal-purchase a:last-of-type:focus {
+  border: 3px solid #32425c;
+  outline: none;
+}
+.modal-purchase a:last-of-type:active{
+  opacity: 0.3;
+}
+/*здесь будут эффекты при наведении и клике на лого компаний*/
+
+.servises{
+  background-color: #f4f8fa;
+}
+.servises h2 {
   font-size: 30px;
+  color: #000000;
   font-weight: normal;
-  line-height: 24px;
+  text-transform: uppercase;
+}
+.servises p {
+  font-family: "PT Sans";
+  font-size: 13px;
   color: #000000;
 }
-.servises-description-title {
-  font-family: "Cuprum";
+/*здесь будет описание слайдера сервисов*/
+.servises-list {
+  list-style: none;
+}
+.servises h3{
   font-size: 36px;
   font-weight: normal;
-  line-height: 24px;
   color: #3d546e;
+  text-transform: uppercase;
+}
+.servises a{
+  font-size: 14px;
+  background-color: #ee3643;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.servises a:hover,
+.servises a:focus{
+  outline: none;
+  background-color: #ca2c37;
+}
+.servises a:active{
+  background-color: #ba2732;
+}
+.delivery-logistic h3{
+  font-size: 30px;
+  color: #000000;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.delivery-logistic p{
+  font-family: "PT sans";
+  font-size: 14px;
+  color: #000000;
+}
+.delivery-company {
+  list-style: none;
+  font-size: 18px;
+  color: #000000;
+}
+.delivery-logistic a{
+  font-size: 18px;
+  background-color: #ee3643;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.delivery-logistic a:hover,
+.delivery-logistic a:focus {
+  outline: none;
+  background-color: #ca2c37;
+}
+.delivery-logistic a:active {
+  background-color: #ba2732;
+}
+.pagination-list {
+  list-style: none;
+}
+.pagination-list li a{
+ font-family: "PT Sans";
+ font-size: 13px;
+ color: #000000;
+ background-color: #ffffff;
+ border: 1px solid #e5e5e5;
+ text-align: center;
+ text-transform: uppercase;
+}
+.pagination-list li a:hover,
+.pagination-list li a:focus{
+  border: 1px solid #bdc6ca;
+}
+.pagination-list li a:active{
+  border: 1px solid #ee3643;
+}
+.puncher-description{
+  background-color: #f2f6f8;
+}
+.puncher-description h2{
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: normal;
+}
+.puncher-description p{
+  font-family: "PT Sans";
+  font-size: 13px;
+  color: #000000;
+}
+.footer-top {
+  background-color: #3d546e;
+}
+.footer-menu {
+  list-style: none;
+}
+.footer-menu a{
+  color: #ffffff;
+}
+.footer-menu-catalog a{
+  color: #ffd180;
+}
+.footer-menu a:hover,
+.footer-menu a:focus {
+  text-decoration: underline;
+}
+.footer-menu a:active {
+  opacity: 0.5;
+  text-decoration: none;
+}
+.footer-bottom {
+  background-color: #293449;
+}
+.footer-social {
+  list-style: none;
+}
+.footer-copyright,
+.footer-developer{
+  font-size: 16px;
+}
+.footer-developer a{
+  color: #ffd180;
+}
+.footer-developer a:hover,
+.footer-developer a:focus {
+  outline: none;
+  text-decoration: underline;
+}
+.footer-developer a:active{
+  color: #ee3643;
+  text-decoration: none;
+}
+.modal{
+  background-color: #ffffff;
+}
+.modal-write-us label{
+  line-height: 18px;
+  color: #000000;
+}
+.modal-write-us input[placeholder],
+.modal-write-us textarea[placeholder]{
+  font-family: "PT Sans";
+  font-size: 13px;
+  line-height: 18px;
+  color: #a9a9a9;
+  border: 2px solid #dee3e4;
+}
+.modal-write-us input[type="text"]{
+  font-family: "PT Sans";
+  font-size: 13px;
+  color: #000000;
+  line-height: 18px;
+}
+.modal-write-us textarea {
+  overflow: auto;
+  resize: none;
+}
+.whrite-us-background {
+  background-color: #f4f4f4;
+}
+.modal-write-us input[type="submit"]{
+  background-color: #ee3643;
+  font-family: "Cuprum";
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  /*Почему этот элемент не наследует параметры шрифта из боди?
+  И приходится их заново писать.
+  И не должен ли он вообще быть button?*/
+}
+.modal-add-cart p:first-of-type{
+  font-size: 30px;
+  line-height: 18px;
+  color: #000000;
+  text-align: center;
+}
+.modal-background {
+  background-color: #f1f1f1;
+}
+.modal-background a{
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.modal-background a:first-of-type{
+  background-color: #ee3643;
+  color: #ffffff;
+}
+.modal-background a:last-of-type{
+  background-color: #ffffff;
+  color: #000000;
+}
+.modal-background a:first-of-type:hover,
+.modal-background a:first-of-type:focus{
+  background-color: #ca2c37;
+}
+.modal-background a:first-of-type:active{
+  background-color: #ba2732;
 }
