@@ -1,10 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Cuprum",  Arial, sans-serif;
-  font-size: 17px;
+
   font-weight: normal;
+  font-size: 17px;
   line-height: 24px;
+  font-family: "Cuprum",  Arial, sans-serif;
   color: #ffffff;
 
   background-color: #000000;
@@ -14,13 +15,16 @@ a {
 }
 .visually-hidden {
   position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
+
   width: 1px;
+  height: 1px;
   margin: -1px;
   padding: 0;
+  overflow: hidden;
+
   border: 0;
+
+  clip: rect(0 0 0 0);
 }
 .main-header {
   background-color: #f2f6f8;
@@ -28,32 +32,34 @@ a {
 .header-line {
   background-color: #293449;
 }
-/*здесь будет замена картинок логотипа*/
+/*здесь будет замена логотипа*/
 .main-header ul {
   list-style: none;
 }
 .main-search input[type="text"],
-.main-search input[placeholder]{
-  background-color: #293449;
-  border: none;
+.main-search input[placeholder] {
   font: inherit;
   /*Почему не наследуются параметры шрифта из боди для плейсхолдера?
   Его в таком общем виде нельзя стилизовать? Надо для каждого браузера прописывать?*/
   color: #ffffff;
+
+  background-color: #293449;
+  border: none;
 }
 .main-menu a,
 .main-navigation,
-.main-navigation a{
+.main-navigation a {
   color: #ffffff;
 }
-.main-menu li:last-of-type a{
+.main-menu li:last-of-type a {
   background-color: #63a63e;
 }
 .main-menu a:hover,
-.main-menu a:focus{
-  outline: none;
+.main-menu a:focus {
   background-color: #212a3a;
+  outline: none;
 }
+/*вложенность больше 3*/
 .main-menu li:last-of-type a:hover,
 .main-menu li:last-of-type a:focus {
   background-color: #5fbb2d;
@@ -63,54 +69,59 @@ a {
   opacity: 0.6;
 }
 .main-header b {
-  font-style: italic;
+  font-weight: normal;
   font-size: 16px;
   line-height: 23px;
-  font-weight: normal;
   color: #ff5357;
+  font-style: italic;
 }
 .main-tel {
   font-size: 21px;
   line-height: 18px;
-  color: #fb463c;
-  border: 3px solid white;
   text-align: center;
+  color: #fb463c;
+
+  border: 3px solid white;
 }
 .main-address {
   font-size: 14px;
-  color: #3d546e;
   text-align: center;
+  color: #3d546e;
 }
-.main-registration a{
-  background-color: #ffffff;
-  color: #000000;
+.main-registration a {
   font-size: 21px;
+  color: #000000;
+
+  background-color: #ffffff;
 }
 .main-registration a:focus,
-.main-registration a:hover{
-  outline: none;
+.main-registration a:hover {
   color: #ee3643;
+
+  outline: none;
 }
-.main-registration a:active{
-  opacity: 0.3;
+.main-registration a:active {
   color: #000000;
+
+  opacity: 0.3;
 }
-.main-autorization a:first-child{
-  background-color: #ffffff;
+.main-autorization a:first-child {
   font-size: 21px;
   color: #000000;
+
+  background-color: #ffffff;
 }
 .main-autorization a:nth-child(3),
-.main-autorization a:last-child{
+.main-autorization a:last-child {
   font-size: 16px;
+  text-align: center;
   color: #32425c;
   text-decoration: underline;
-  text-align: center;
 }
 .main-autorization a:nth-child(3):hover,
 .main-autorization a:last-child:hover,
 .main-autorization a:nth-child(3):focus,
-.main-autorization a:last-child:focus{
+.main-autorization a:last-child:focus {
   color: #ee3643;
 }
 /*.main-autorization a:first-child:hover,
@@ -118,153 +129,163 @@ a {
 }
 */
 .main-autorization a:nth-child(3):active,
-.main-autorization a:last-child:active{
-  opacity: 0.3;
+.main-autorization a:last-child:active {
   color: #32425c;
-}
-.main-autorization a:first-child:active{
+
   opacity: 0.3;
-  color: #000000;
 }
-.main-navigation a{
-  background-color: #3d546e;
+.main-autorization a:first-child:active {
+  color: #000000;
+
+  opacity: 0.3;
+}
+.main-navigation a {
   font-size: 17px;
+
+  background-color: #3d546e;
 }
 .main-navigation a:hover,
-.main-navigation a:focus{
-  outline: none;
+.main-navigation a:focus {
   background-color: #293449;
+  outline: none;
 }
-.main-navigation a:active{
+.main-navigation a:active {
+  color: rgba(255, 255, 255, 0.5);
+
   background-color: #1d2739;
-  color: rgba(255,255,255,0.5);
 }
 .container {
   background-color: #ffffff;
 }
 .breadcrumbs {
   list-style: none;
-  font-family: "PT Sans";
   font-size: 13px;
   line-height: 18px;
-  text-transform: uppercase;
+  font-family: "PT Sans";
   color: #000000;
+  text-transform: uppercase;
 }
 /*Не могу понять из стайлгайда, как должны вести себя кнопки в хлебных крошках
 при наведении и клике*/
 .punchers-background,
-.sorting{
+.sorting {
   background-color: #f2f6f8;
 }
-.punchers-background h1{
+.punchers-background h1 {
+  font-weight: normal;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
-  font-weight: normal;
   text-transform: uppercase;
 }
 .filters h2,
-.sorting h2{
-  font-size: 13px;
+.sorting h2 {
   font-weight: normal;
-  text-transform: uppercase;
-  color: #000000;
+  font-size: 13px;
   line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+
   background-color: #f7f3ec;
 }
-.filters fieldset{
+.filters fieldset {
   border: none;
 }
-.filters legend{
-  font-family: "PT Sans";
+.filters legend {
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
+  font-family: "PT Sans";
   color: #000000;
   text-transform: uppercase;
 }
 /*тут будет стилизация поля с ценой и ползунков*/
-.filter-brands label{
-  font-family: "PT Sans";
+.filter-brands label {
   font-size: 15px;
   line-height: 20px;
+  font-family: "PT Sans";
   color: #000000;
   text-transform: uppercase;
 }
-.filter-power label{
-  font-family: "PT Sans";
+.filter-power label {
   font-size: 14px;
   line-height: 20px;
+  font-family: "PT Sans";
   color: #000000;
   text-transform: uppercase;
 }
-.filter-button{
-  font-family: "PT Sans";
+.filter-button {
   font-size: 13px;
   line-height: 18px;
-  text-transform: uppercase;
+  font-family: "PT Sans";
   text-align: center;
-  border: 1px solid #e5e5e5;
+  text-transform: uppercase;
+
   background-color: #ffffff;
+  border: 1px solid #e5e5e5;
 }
 .sorting {
   background-color: #f7f3ec;
 }
-.sorting ul{
+.sorting-list {
   list-style: none;
 }
-.sorting a{
-  font-family: "PT Sans";
+.sorting-list a {
   font-size: 13px;
+  font-family: "PT Sans";
   text-transform: uppercase;
 }
-.sorting li:first-child a{
+/*вложенность больше 3*/
+.sorting-list li:first-child a {
   color: #ee3643;
 }
-.sorting li:nth-child(2) a,
-.sorting li:last-child a{
-  color: rgba(0,0,0,0.3);
+.sorting-list li:nth-child(2) a,
+.sorting-list li:last-child a {
+  color: rgba(0, 0, 0, 0.3);
+
   border-bottom: 1px dashed #ee3643;
 }
-.sorting li a:hover,
-.sorting li a:focus{
+.sorting-list li a:hover,
+.sorting-list li a:focus {
   color: #000000;
+
   border-bottom: 1px solid #ee3643;
 }
 .promo article {
-  font-size: 30px;
   font-weight: bold;
+  font-size: 30px;
   line-height: 30px;
 }
 .promo article:first-of-type {
   background-color: #ffbf47;
 }
-.promo article:nth-of-type(2){
+.promo article:nth-of-type(2) {
   background-color: #3bbce3;
 }
-.promo article:nth-of-type(3){
+.promo article:nth-of-type(3) {
   background-color: #dc91d8;
 }
-.promo article:nth-of-type(4){
+.promo article:nth-of-type(4) {
   background-color: #8ed78f;
 }
-.promo article:last-of-type{
+.promo article:last-of-type {
   background-color: #ffc047;
 }
-.promo a{
+.promo a {
   font-size: 14px;
-  text-transform: uppercase;
   text-align: center;
   color: #ffffff;
-  background-color: rgba(229,229,229,0.1);
+  text-transform: uppercase;
+
+  background-color: rgba(229, 229, 229, 0.1);
 }
 .promo a:hover,
 .promo a:focus {
-  background-color: rgba(229,229,229,0.2);
+  background-color: rgba(229, 229, 229, 0.2);
   outline: none;
 }
 .promo a:active {
-  background-color: rgba(229,229,229,0.3);
+  background-color: rgba(229, 229, 229, 0.3);
   outline: none;
 }
 /*Здесь будет код для слайдера*/
@@ -273,11 +294,11 @@ a {
   background-color: #f9f5f0;
 }
 .popular-background h2 {
-  font-size: 30px;
   font-weight: normal;
+  font-size: 30px;
   line-height: 30px;
-  text-transform: uppercase;
   color: #3d546e;
+  text-transform: uppercase;
 }
 /*Почему этот заголовок в хроме выглядит жирнее, чем в макете?
 Хотя font-weight указан*/
@@ -285,12 +306,13 @@ a {
 /*Конкретно для нижеследующих ссылок стайлгайда нет, но кнопки в слайдере
 выглядят точно так же, поэтому я взяла стилизацию по аналогии, и тут расхождения
 по цвету и высоте строки с основным макетом*/
-.popular-background a{
+.popular-background a {
   font-size: 14px;
-  text-transform: uppercase;
   text-align: center;
-  background-color: #ee3643;
   color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
 }
 .popular-background a:hover,
 .popular-background a:focus {
@@ -302,42 +324,45 @@ a {
   outline: none;
 }
 .product-item h3 {
-  font-family: "PT Sans";
-  font-size: 18px;
   font-weight: bold;
-  color: #000000;
+  font-size: 18px;
+  font-family: "PT Sans";
   text-align: center;
+  color: #000000;
 }
 .old-price {
-  font-family: "PT Sans";
-  font-size: 17px;
   font-weight: bold;
-  color: #a9a9a9;
+  font-size: 17px;
+  font-family: "PT Sans";
   text-align: center;
+  color: #a9a9a9;
   text-decoration: line-through;
 }
-.product-item b{
-  font-family: "PT Sans";
-  font-size: 17px;
+.product-item b {
   font-weight: bold;
+  font-size: 17px;
   line-height: 18px;
-  color: #ffffff;
+  font-family: "PT Sans";
   text-align: center;
+  color: #ffffff;
+
   background-color: #ee3643;
 }
 .product-item img:hover {
   /*здесь будет рамочка при наведении*/
 }
-.modal-purchase a:first-of-type{
+.modal-purchase a:first-of-type {
   font-size: 14px;
-  text-transform: uppercase;
-  background-color: #63a63e;
   color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #63a63e;
 }
-.modal-purchase a:last-of-type{
+.modal-purchase a:last-of-type {
   font-size: 14px;
   color: #32425c;
   text-transform: uppercase;
+
   border: 3px solid #63a63e;
 }
 .modal-purchase a:first-of-type:hover,
@@ -345,7 +370,7 @@ a {
   background-color: #5fbb2d;
   outline: none;
 }
-.modal-purchase a:first-of-type:active{
+.modal-purchase a:first-of-type:active {
   background-color: #518534;
 }
 .modal-purchase a:last-of-type:hover,
@@ -353,58 +378,59 @@ a {
   border: 3px solid #32425c;
   outline: none;
 }
-.modal-purchase a:last-of-type:active{
+.modal-purchase a:last-of-type:active {
   opacity: 0.3;
 }
 /*здесь будут эффекты при наведении и клике на лого компаний*/
 
-.servises{
+.servises {
   background-color: #f4f8fa;
 }
 .servises h2 {
+  font-weight: normal;
   font-size: 30px;
   color: #000000;
-  font-weight: normal;
   text-transform: uppercase;
 }
 .servises p {
-  font-family: "PT Sans";
   font-size: 13px;
+  font-family: "PT Sans";
   color: #000000;
 }
 /*здесь будет описание слайдера сервисов*/
 .servises-list {
   list-style: none;
 }
-.servises h3{
-  font-size: 36px;
+.servises h3 {
   font-weight: normal;
+  font-size: 36px;
   color: #3d546e;
   text-transform: uppercase;
 }
-.servises a{
+.servises a {
   font-size: 14px;
-  background-color: #ee3643;
   color: #ffffff;
   text-transform: uppercase;
+
+  background-color: #ee3643;
 }
 .servises a:hover,
-.servises a:focus{
-  outline: none;
+.servises a:focus {
   background-color: #ca2c37;
+  outline: none;
 }
-.servises a:active{
+.servises a:active {
   background-color: #ba2732;
 }
-.delivery-logistic h3{
+.delivery-logistic h3 {
+  font-weight: normal;
   font-size: 30px;
   color: #000000;
-  font-weight: normal;
   text-transform: uppercase;
 }
-.delivery-logistic p{
-  font-family: "PT sans";
+.delivery-logistic p {
   font-size: 14px;
+  font-family: "PT sans";
   color: #000000;
 }
 .delivery-company {
@@ -412,16 +438,17 @@ a {
   font-size: 18px;
   color: #000000;
 }
-.delivery-logistic a{
+.delivery-logistic a {
   font-size: 18px;
-  background-color: #ee3643;
   color: #ffffff;
   text-transform: uppercase;
+
+  background-color: #ee3643;
 }
 .delivery-logistic a:hover,
 .delivery-logistic a:focus {
-  outline: none;
   background-color: #ca2c37;
+  outline: none;
 }
 .delivery-logistic a:active {
   background-color: #ba2732;
@@ -429,34 +456,35 @@ a {
 .pagination-list {
   list-style: none;
 }
-.pagination-list li a{
- font-family: "PT Sans";
- font-size: 13px;
- color: #000000;
- background-color: #ffffff;
- border: 1px solid #e5e5e5;
- text-align: center;
- text-transform: uppercase;
+.pagination-list li a {
+  font-size: 13px;
+  font-family: "PT Sans";
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
 }
 .pagination-list li a:hover,
-.pagination-list li a:focus{
+.pagination-list li a:focus {
   border: 1px solid #bdc6ca;
 }
-.pagination-list li a:active{
+.pagination-list li a:active {
   border: 1px solid #ee3643;
 }
-.puncher-description{
+.puncher-description {
   background-color: #f2f6f8;
 }
-.puncher-description h2{
-  font-size: 30px;
-  text-transform: uppercase;
-  color: #000000;
+.puncher-description h2 {
   font-weight: normal;
+  font-size: 30px;
+  color: #000000;
+  text-transform: uppercase;
 }
-.puncher-description p{
-  font-family: "PT Sans";
+.puncher-description p {
   font-size: 13px;
+  font-family: "PT Sans";
   color: #000000;
 }
 .footer-top {
@@ -465,10 +493,10 @@ a {
 .footer-menu {
   list-style: none;
 }
-.footer-menu a{
+.footer-menu a {
   color: #ffffff;
 }
-.footer-menu-catalog a{
+.footer-menu-catalog a {
   color: #ffd180;
 }
 .footer-menu a:hover,
@@ -476,8 +504,9 @@ a {
   text-decoration: underline;
 }
 .footer-menu a:active {
-  opacity: 0.5;
   text-decoration: none;
+
+  opacity: 0.5;
 }
 .footer-bottom {
   background-color: #293449;
@@ -486,87 +515,93 @@ a {
   list-style: none;
 }
 .footer-copyright,
-.footer-developer{
+.footer-developer {
   font-size: 16px;
 }
-.footer-developer a{
+.footer-developer a {
   color: #ffd180;
 }
 .footer-developer a:hover,
 .footer-developer a:focus {
-  outline: none;
   text-decoration: underline;
+
+  outline: none;
 }
-.footer-developer a:active{
+.footer-developer a:active {
   color: #ee3643;
   text-decoration: none;
 }
-.modal{
+.modal {
   background-color: #ffffff;
 }
-.modal-write-us label{
+.modal-write-us label {
   line-height: 18px;
   color: #000000;
 }
 .modal-write-us input[placeholder],
-.modal-write-us textarea[placeholder]{
-  font-family: "PT Sans";
+.modal-write-us textarea[placeholder] {
   font-size: 13px;
   line-height: 18px;
+  font-family: "PT Sans";
   color: #a9a9a9;
+
   border: 2px solid #dee3e4;
 }
-.modal-write-us input[type="text"]{
-  font-family: "PT Sans";
+.modal-write-us input[type="text"] {
   font-size: 13px;
-  color: #000000;
   line-height: 18px;
+  font-family: "PT Sans";
+  color: #000000;
 }
 .modal-write-us textarea {
   overflow: auto;
+
   resize: none;
 }
 .whrite-us-background {
   background-color: #f4f4f4;
 }
-.modal-write-us input[type="submit"]{
-  background-color: #ee3643;
-  font-family: "Cuprum";
+.modal-write-us input[type="submit"] {
   font-size: 14px;
-  text-transform: uppercase;
+  font-family: "Cuprum";
   text-align: center;
   color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
   border: none;
   /*Почему этот элемент не наследует параметры шрифта из боди?
   И приходится их заново писать.
   И не должен ли он вообще быть button?*/
 }
-.modal-add-cart p:first-of-type{
+.modal-add-cart p:first-of-type {
   font-size: 30px;
   line-height: 18px;
-  color: #000000;
   text-align: center;
+  color: #000000;
 }
 .modal-background {
   background-color: #f1f1f1;
 }
-.modal-background a{
+.modal-background a {
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
 }
-.modal-background a:first-of-type{
-  background-color: #ee3643;
+.modal-background a:first-of-type {
   color: #ffffff;
+
+  background-color: #ee3643;
 }
-.modal-background a:last-of-type{
-  background-color: #ffffff;
+.modal-background a:last-of-type {
   color: #000000;
+
+  background-color: #ffffff;
 }
 .modal-background a:first-of-type:hover,
-.modal-background a:first-of-type:focus{
+.modal-background a:first-of-type:focus {
   background-color: #ca2c37;
 }
-.modal-background a:first-of-type:active{
+.modal-background a:first-of-type:active {
   background-color: #ba2732;
 }
