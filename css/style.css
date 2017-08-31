@@ -32,19 +32,45 @@ a {
 .header-line {
   background-color: #293449;
 }
-/*здесь будет замена логотипа*/
+.logo-technomart {
+  background-color: #ee3643;
+  color: #ffffff;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.logo-technomart[href]:hover,
+.logo-technomart[href]:focus{
+  background-color: #ca2c37;
+}
+.logo-technomart[href]:active{
+  background-color: #ba2732;
+}
 .main-header ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.main-search input[type="text"],
-.main-search input[placeholder] {
-  font: inherit;
-  /*Почему не наследуются параметры шрифта из боди для плейсхолдера?
-  Его в таком общем виде нельзя стилизовать? Надо для каждого браузера прописывать?*/
-  color: #ffffff;
-
+.main-search input[type="text"]{
   background-color: #293449;
   border: none;
+  width: 220px;
+}
+.main-search input::placeholder{
+  color: #ffffff;
+  font-family: "Cuprum",  Arial, sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+}
+.main-search input:hover{
+  background-color: #212a3a;
+  outline: none;
+}
+.main-search input:active,
+.main-search input:focus{
+  background-color: #ffffff;
+  font: inherit;
+  color: #000000;
 }
 .main-menu a,
 .main-navigation,
@@ -59,13 +85,12 @@ a {
   background-color: #212a3a;
   outline: none;
 }
-/*вложенность больше 3*/
-.main-menu li:last-of-type a:hover,
-.main-menu li:last-of-type a:focus {
+.main-menu .ordering:hover,
+.main-menu .ordering:focus {
   background-color: #5fbb2d;
 }
 .main-menu a:active,
-.main-menu li:last-of-type a:active {
+.main-menu .ordering:active {
   opacity: 0.6;
 }
 .main-header b {
@@ -139,6 +164,9 @@ a {
 
   opacity: 0.3;
 }
+.add-action {
+  background-color: #ee3643;
+}
 .main-navigation a {
   font-size: 17px;
 
@@ -161,7 +189,7 @@ a {
   list-style: none;
   font-size: 13px;
   line-height: 18px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
@@ -195,7 +223,7 @@ a {
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
@@ -203,21 +231,21 @@ a {
 .filter-brands label {
   font-size: 15px;
   line-height: 20px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
 .filter-power label {
   font-size: 14px;
   line-height: 20px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
 .filter-button {
   font-size: 13px;
   line-height: 18px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   text-align: center;
   text-transform: uppercase;
 
@@ -232,21 +260,19 @@ a {
 }
 .sorting-list a {
   font-size: 13px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
 }
-/*вложенность больше 3*/
-.sorting-list li:first-child a {
+.sorting-list .current-sorting{
   color: #ee3643;
 }
-.sorting-list li:nth-child(2) a,
-.sorting-list li:last-child a {
+.sorting-list .unselected-sorting{
   color: rgba(0, 0, 0, 0.3);
 
   border-bottom: 1px dashed #ee3643;
 }
-.sorting-list li a:hover,
-.sorting-list li a:focus {
+.sorting-list .unselected-sorting:hover,
+.sorting-list .unselected-sorting:focus {
   color: #000000;
 
   border-bottom: 1px solid #ee3643;
@@ -302,10 +328,6 @@ a {
 }
 /*Почему этот заголовок в хроме выглядит жирнее, чем в макете?
 Хотя font-weight указан*/
-
-/*Конкретно для нижеследующих ссылок стайлгайда нет, но кнопки в слайдере
-выглядят точно так же, поэтому я взяла стилизацию по аналогии, и тут расхождения
-по цвету и высоте строки с основным макетом*/
 .popular-background a {
   font-size: 14px;
   text-align: center;
@@ -326,14 +348,14 @@ a {
 .product-item h3 {
   font-weight: bold;
   font-size: 18px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   text-align: center;
   color: #000000;
 }
 .old-price {
   font-weight: bold;
   font-size: 17px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   text-align: center;
   color: #a9a9a9;
   text-decoration: line-through;
@@ -342,44 +364,53 @@ a {
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   text-align: center;
   color: #ffffff;
 
   background-color: #ee3643;
 }
-.product-item img:hover {
-  /*здесь будет рамочка при наведении*/
+.modal-purchase{
+  display: none;
 }
-.modal-purchase a:first-of-type {
+.product-item:hover .modal-purchase{
+  display: block;
+}
+.purchase {
   font-size: 14px;
   color: #ffffff;
   text-transform: uppercase;
 
   background-color: #63a63e;
 }
-.modal-purchase a:last-of-type {
+.add-bookmark {
   font-size: 14px;
   color: #32425c;
   text-transform: uppercase;
 
   border: 3px solid #63a63e;
 }
-.modal-purchase a:first-of-type:hover,
-.modal-purchase a:first-of-type:focus {
+.purchase:hover,
+.purchase:focus {
   background-color: #5fbb2d;
   outline: none;
 }
-.modal-purchase a:first-of-type:active {
+.purchase:active {
   background-color: #518534;
 }
-.modal-purchase a:last-of-type:hover,
-.modal-purchase a:last-of-type:focus {
+.add-bookmark:hover,
+.add-bookmark:focus {
   border: 3px solid #32425c;
   outline: none;
 }
-.modal-purchase a:last-of-type:active {
+.add-bookmark:active {
   opacity: 0.3;
+}
+.modal-add-cart {
+  display: none;
+}
+.purchase:active .modal-add-cart{
+  display: block;
 }
 /*здесь будут эффекты при наведении и клике на лого компаний*/
 
@@ -394,12 +425,14 @@ a {
 }
 .servises p {
   font-size: 13px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
 }
 /*здесь будет описание слайдера сервисов*/
 .servises-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .servises h3 {
   font-weight: normal;
@@ -430,13 +463,15 @@ a {
 }
 .delivery-logistic p {
   font-size: 14px;
-  font-family: "PT sans";
+  font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
 }
 .delivery-company {
   list-style: none;
   font-size: 18px;
   color: #000000;
+  margin: 0;
+  padding: 0;
 }
 .delivery-logistic a {
   font-size: 18px;
@@ -455,16 +490,24 @@ a {
 }
 .pagination-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .pagination-list li a {
   font-size: 13px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   text-align: center;
   color: #000000;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
+}
+.pagination-item-current {
+  background-color: #ee3643;
+  color: #ffffff;
 }
 .pagination-list li a:hover,
 .pagination-list li a:focus {
@@ -484,7 +527,7 @@ a {
 }
 .puncher-description p {
   font-size: 13px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
 }
 .footer-top {
@@ -492,6 +535,8 @@ a {
 }
 .footer-menu {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .footer-menu a {
   color: #ffffff;
@@ -513,6 +558,8 @@ a {
 }
 .footer-social {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .footer-copyright,
 .footer-developer {
@@ -542,7 +589,7 @@ a {
 .modal-write-us textarea[placeholder] {
   font-size: 13px;
   line-height: 18px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   color: #a9a9a9;
 
   border: 2px solid #dee3e4;
@@ -550,7 +597,7 @@ a {
 .modal-write-us input[type="text"] {
   font-size: 13px;
   line-height: 18px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
 }
 .modal-write-us textarea {
@@ -562,17 +609,26 @@ a {
   background-color: #f4f4f4;
 }
 .modal-write-us input[type="submit"] {
-  font-size: 14px;
-  font-family: "Cuprum";
-  text-align: center;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  font-family: "Cuprum",  Arial, sans-serif;
   color: #ffffff;
+  
+  text-align: center;
+  
   text-transform: uppercase;
 
   background-color: #ee3643;
   border: none;
-  /*Почему этот элемент не наследует параметры шрифта из боди?
-  И приходится их заново писать.
-  И не должен ли он вообще быть button?*/
+}
+.modal-write-us input[type="submit"]:hover,
+.modal-write-us input[type="submit"]:focus{
+  background-color: #ca2c37;
+  outline: none;
+}
+.modal-write-us input[type="submit"]:active{
+  background-color: #ba2732;
 }
 .modal-add-cart p:first-of-type {
   font-size: 30px;
