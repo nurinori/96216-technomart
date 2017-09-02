@@ -261,14 +261,13 @@ a {
 .catalog-main-wrapper {
   display: flex;
   width: 940px;
+  justify-content: space-between;
 }
 /*центровщик всего каталога, кроме статьи*/
 .container-center {
   width: 960px;
   margin: 0 auto;
   padding: 0 10px;
-
-  background-color: yellow;
 }
 .breadcrumbs {
   display: flex;
@@ -335,6 +334,11 @@ a {
   text-transform: uppercase;
 }
 /*тут будет стилизация поля с ценой и ползунков*/
+.filter-brands ul,
+.filter-power ul{
+  padding: 0;
+  margin: 0;
+}
 .filter-brands label {
   font-size: 15px;
   line-height: 20px;
@@ -369,7 +373,6 @@ a {
   min-height: 40px;
 
   background-color: #f7f3ec;
-  background-color: white;
 }
 .sorting-list {
   display: flex;
@@ -379,8 +382,6 @@ a {
   padding: 0;
 
   list-style: none;
-
-  background-color: blue;
 }
 .sorting-list a {
   font-size: 13px;
@@ -417,6 +418,7 @@ a {
 .promo article {
   width: 300px;
   min-height: 125px;
+
   font-weight: bold;
   font-size: 30px;
   line-height: 30px;
@@ -433,26 +435,31 @@ a {
   width: 320px;
 }
 .promo-materials {
-  background-color: #ffbf47;
   margin: 10px;
+
+  background-color: #ffbf47;
 }
 .promo-tools {
-  background-color: #3bbce3;
   margin: 10px;
+
+  background-color: #3bbce3;
 }
 .promo-tech {
-  background-color: #dc91d8;
   margin: 10px;
+
+  background-color: #dc91d8;
 }
 .promo-actions {
-  background-color: #8ed78f;
-  margin-left: 10px;
   margin-top: 10px;
   margin-bottom: 17px;
+  margin-left: 10px;
+
+  background-color: #8ed78f;
 }
 .promo-delivery {
-  background-color: #ffc047;
   margin-left: 10px;
+
+  background-color: #ffc047;
 }
 .promo a {
   font-size: 14px;
@@ -482,8 +489,8 @@ a {
   width: 1340px;
 }
 .slider-inner {
-  overflow: hidden;
   height: 267px;
+  overflow: hidden;
 }
 .slider-slides .slide-content {
   float: left;
@@ -517,7 +524,7 @@ a {
 .slide-content {
   height: 267px;
 }
-.slide-content h3{
+.slide-content h3 {
   margin: 0;
   padding: 0;
 }
@@ -571,7 +578,7 @@ a {
 }
 /*здесь будут эффекты при наведении и клике на лого компаний*/
 .popular-brands-catalog a {
-border: 1px solid #eaeaea;
+  border: 1px solid #eaeaea;
 }
 .popular-brands-catalog {
   display: flex;
@@ -837,6 +844,7 @@ border: 1px solid #eaeaea;
 .pagination-list {
   margin: 0;
   padding: 0;
+  display: flex;
 
   list-style: none;
 }
