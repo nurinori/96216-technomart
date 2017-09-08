@@ -16,7 +16,9 @@
             Техномарт
           </a>
           <form class="main-search" method="get" action="https://echo.htmlacademy.ru">
-            <label class="visually-hidden" for="search">Поиск:</label>
+            <label class="visually-hidden" for="search">
+            	Поиск:
+            </label>
               <input type="text" name="main-search" id="search" placeholder="Поиск:">
           </form>
           <ul class="main-menu">
@@ -60,8 +62,8 @@
               </li>
             </ul>
           </div>
-          <nav class="main-navigation">
-            <ul>
+          <nav class="navigation-wrapper">
+            <ul class="main-navigation">
               <li class="current-navigation">
                 Главная
               </li>
@@ -91,8 +93,11 @@
       <section class="promo">
         <h2 class="visually-hidden">Промоматериалы</h2>
         <article class="promo-materials">
-          <h3>Материалы</h3>
-          <a href="#catalog-stuff">на любой вкус</a>
+					<h3>Материалы</h3>
+					<a href="#catalog-stuff">на любой вкус</a>
+          	<span class="visually-hidden">
+          		Новинка
+          	</span>
         </article>
         <article class="promo-tools">
           <h3>Инструмент</h3>
@@ -148,8 +153,8 @@
           </div>
           <div class="product-container">
             <article class="product-item">
-              <h3>Перфоратор BOSH BFG 9000</h3>
-              <img src="img/item-bfg9000.jpg" width="218" height="160" alt="Перфоратор BOSH BFG 9000">
+              <h3>Перфоратор BOSCH BFG 9000</h3>
+              <img src="img/item-bfg9000.jpg" width="218" height="160" alt="Перфоратор BOSCH BFG 9000">
               <b>25500 Р.</b>
               <span class="old-price">32500 Р.</span>
               <div class="modal-purchase">
@@ -158,8 +163,8 @@
               </div>
             </article>
             <article class="product-item">
-              <h3>Перфоратор BOSH BFG 3000</h3>
-              <img src="img/item-bfg3000.jpg" width="218" height="160" alt="Перфоратор BOSH BFG 3000">
+              <h3>Перфоратор BOSCH BFG 3000</h3>
+              <img src="img/item-bfg3000.jpg" width="218" height="160" alt="Перфоратор BOSCH BFG 3000">
               <b>15500 Р.</b>
               <span class="old-price">22500 Р.</span>
               <div class="modal-purchase">
@@ -168,8 +173,8 @@
               </div>
             </article>
             <article class="product-item">
-              <h3>Перфоратор BOSH BFG 6000</h3>
-              <img src="img/item-bfg6000.jpg" width="218" height="160" alt="Перфоратор BOSH BFG 6000">
+              <h3>Перфоратор BOSCH BFG 6000</h3>
+              <img src="img/item-bfg6000.jpg" width="218" height="160" alt="Перфоратор BOSCH BFG 6000">
               <b>25500 Р.</b>
               <span class="old-price">30500 Р.</span>
               <div class="modal-purchase">
@@ -178,9 +183,12 @@
               </div>
             </article>
             <article class="product-item">
-              <h3>Перфоратор BOSH BFG 2000</h3>
-              <img src="img/item-bfg2000.jpg" width="218" height="160" alt="Перфоратор BOSH BFG 2000">
+              <h3>Перфоратор BOSCH BFG 2000</h3>
+              <img src="img/item-bfg2000.jpg" width="218" height="160" alt="Перфоратор BOSCH BFG 2000">
               <b>12500 Р.</b>
+	          	<span class="visually-hidden">
+	          		Новинка
+	          	</span>
               <div class="modal-purchase">
                 <a href="#shopping-cart" class="purchase">Купить</a>
                 <a href="#bookmarks" class="add-bookmark">В закладки</a>
@@ -257,9 +265,9 @@
                   <li>
                     <h3>Доставка</h3>
                     <p>
-                      Мы с удовольствием доставим ваш товар прямо
-                      к вашему подъезду совершенно бесплатно!
-                      Ведь мы неплохо заработаем,
+                      Мы с удовольствием доставим ваш товар прямо<br>
+                      к вашему подъезду совершенно бесплатно!<br>
+                      Ведь мы неплохо заработаем,<br>
                       поднимая его на ваш этаж!
                     </p>
                   </li>
@@ -269,14 +277,14 @@
                       Если купленный у нас товар поломается или заискрит,
                       а также в случае пожара, спровоцированного его возгаранием,
                       вы всегда можете быть уверены в нашей гарантии.
-                      Мы обменяем сгоревший товар на новый.
+                      Мы обменяем сгоревший товар на новый.<br>
                       Дом уж восстановите как-нибудь сами.
                     </p>
                   </li>
                   <li>
                     <h3>Кредит</h3>
                     <p>
-                      Залезть в долговую яму стало проще!
+                      Залезть в долговую яму стало проще!<br>
                       Кредитные консультанты придут вам на помощь.
                       <a href="#credits" class="credits">Отправить заявку</a>
                     </p>
@@ -316,7 +324,7 @@
         <div class="delivery-logistic">
           <h3>Контакты</h3>
           <p>
-            Вы можете забрать товар сами, заехав в наш офис:
+            Вы можете забрать товар сами, <br>заехав в наш офис:
           </p>
           <button class="modal-map" href="#">
             <span class="visually-hidden">Карта проезда</span>
@@ -332,11 +340,11 @@
           <div class="footer-contacts-wrapper">
             <img src="img/logo-technomart-footer.png" width="220" height="68" alt="Логотип магазина Техномарт">
             <p>
-              г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8<br>
-              +7(812) 555-05-55
+              г. Санкт-Петербург, ул. Б. Конюшенная, д .19/8<br>
+              +7 (812) 555-05-55
             </p>
           </div>
-          <div slass="footer-menu-wrapper">
+          <div class="footer-menu-wrapper">
             <ul class="footer-menu">
               <li>
                 <a href="#company">Компания</a>
