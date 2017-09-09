@@ -726,6 +726,12 @@ a {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+.brands-label input[type="checkbox"]:disabled + .checkbox-indicator {
+  opacity: 0.3;
+}
+.brands-label input[type="checkbox"]:checked:disabled + .checkbox-indicator {
+  opacity: 0.3;
+}
 .brands-label input[type="checkbox"]:hover + .checkbox-indicator {
   background-image: url("../img/checkbox-off-hover.svg");
 }
@@ -771,6 +777,12 @@ a {
 }
 .power-label input[type="radio"]:checked:hover + .radio-indicator {
   background-image: url("../img/radio-on-hover.svg");
+}
+.power-label input[type="radio"]:disabled + .radio-indicator {
+  opacity: 0.3;
+}
+.power-label input[type="radio"]:checked:disabled + .radio-indicator {
+  opacity: 0.3;
 }
 .filter-button {
   margin-top: 59px;
