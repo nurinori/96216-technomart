@@ -962,8 +962,8 @@ a {
 .promo a {
   display: block;
   width: 93px;
+  margin-bottom: 22px;
   margin-left: 25px;
-    margin-bottom: 22px;
   padding: 11px 21px 9px 21px;
 
   font-size: 14px;
