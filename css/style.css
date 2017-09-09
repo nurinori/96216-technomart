@@ -49,7 +49,6 @@ a {
 
   background-color: #f2f6f8;
 }
-
 .main-header ul {
   margin: 0;
   padding: 0;
@@ -73,7 +72,6 @@ a {
   -webkit-box-shadow: 0 5px 0 0 #b52933;
           box-shadow: 0 5px 0 0 #b52933;
 }
-
 .logo-technomart[href]:hover,
 .logo-technomart[href]:focus {
   background-color: #ca2c37;
@@ -450,7 +448,6 @@ a {
   line-height: 17px;
   color: #ffffff;
 }
-
 .main-navigation a:hover,
 .main-navigation a:focus {
   background-color: #293449;
@@ -1208,7 +1205,6 @@ a {
       -ms-transform: translate(0);
           transform: translate(0);
 }
-
 #btn-2:checked ~ .slider-inner .slider-slides {
   -webkit-transform: translate(-620px);
       -ms-transform: translate(-620px);
@@ -1419,7 +1415,6 @@ a {
 
   -webkit-box-ordinal-group: 2;
 }
-
 /*карточка товара end*/
 /*модалка товара*/
 .modal-purchase {
@@ -2371,7 +2366,6 @@ a {
 .modal-background {
   background-color: #f1f1f1;
 }
-
 .modal-background a {
   display: inline-block;
   margin: 39px 0 36px 0;
