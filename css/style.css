@@ -878,7 +878,6 @@ a {
   display: flex;
       flex-wrap: wrap;
   width: 940px;
-  min-height: 409px;
   margin: 0 auto;
   margin-top: 59px;
   margin-bottom: 53px;
@@ -928,15 +927,19 @@ a {
 }
 .promo-materials {
   margin-right: 20px;
+  margin-bottom: 20px;
 
   background-color: #ffbf47;
 }
 .promo-tools {
   margin-right: 20px;
+  margin-bottom: 20px;
 
   background-color: #3bbce3;
 }
 .promo-tech {
+  margin-bottom: 20px;
+
   background-color: #dc91d8;
 }
 .promo-actions {
@@ -960,6 +963,7 @@ a {
   display: block;
   width: 93px;
   margin-left: 25px;
+    margin-bottom: 22px;
   padding: 11px 21px 9px 21px;
 
   font-size: 14px;
@@ -970,9 +974,6 @@ a {
 
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 3px;
-}
-.promo-wrapper a {
-  margin-bottom: 22px;
 }
 .promo a:hover,
 .promo a:focus {
