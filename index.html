@@ -326,11 +326,11 @@
           <p>
             Вы можете забрать товар сами, <br>заехав в наш офис:
           </p>
-          <button class="modal-map" href="#">
+          <button class="map" href="#">
             <span class="visually-hidden">Карта проезда</span>
             <img src="img/map.jpg" width="300" height="158" alt="Карта проезда">
           </button>
-          <button class="modal-write-us" href="#">Заблудились? Напишите нам!</a>
+          <button class="button-whrite-us" href="#">Заблудились? Напишите нам!</a>
         </button>
       </section>
     </main>
@@ -421,19 +421,21 @@
     <section class="modal modal-write-us">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form  action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="name">Ваше имя:</label>
-          <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста" required>
-        </p>
-        <p>
-          <label for="email">Ваш e-mail</label>
-          <input type="text" name="email" id="email" placeholder="Для отправки ответа" required>
-        </p>
-        <p>
-          <label for="text-question">Текст письма</label>
-          <textarea name="text-question" id="text-question" placeholder="В свободной форме" required></textarea>
-        </p>
-        <div class="write-us-background">
+       <div class="write-us-wrapper">
+          <p>
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста" required>
+          </p>
+          <p>
+            <label for="email">Ваш e-mail:</label>
+            <input type="text" name="email" id="email" placeholder="Для отправки ответа" required>
+          </p>
+          <p>
+            <label for="text-question">Текст письма</label>
+            <textarea name="text-question" id="text-question" placeholder="В свободной форме" required></textarea>
+          </p>
+        </div>
+        <div class="whrite-us-background">
           <input type="submit" value="Отправить">
         </div>
       </form>
@@ -442,10 +444,10 @@
         </button>
     </section>
     <section class="modal modal-map">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
       <button class="modal-button">
         <span class="visually-hidden">Закрыть</span>
       </button>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
     </section>
     <section class="modal modal-add-cart">
       <p>

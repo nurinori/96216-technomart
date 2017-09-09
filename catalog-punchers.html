@@ -135,29 +135,39 @@
                 <legend>Производители:</legend>
                 <ul>
                   <li class="filter-option">
-                    <label for="bosh">BOSH</label>
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
-                      name="bosh" id="bosh" checked>
+                    <label for="bosh" class="brands-label">BOSCH
+                      <input class="visually-hidden" type="checkbox"
+                        name="bosh" id="bosh" checked>
+                      <span class="checkbox-indicator"></span>
+                    </label>
                   </li>
                   <li class="filter-option">
-                    <label for="interscol">Интерскол</label>
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
-                      name="interscol" id="interscol">
+                    <label for="interscol" class="brands-label">Интерскол
+                      <input class="visually-hidden"type="checkbox"
+                        name="interscol" id="interscol">
+                        <span class="checkbox-indicator"></span>
+                    </label>
                   </li>
                   <li class="filter-option">
-                    <label for ="makita">Makita</label>
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
-                      name="makita" id="makita" checked>
+                    <label for ="makita" class="brands-label">Makita
+                      <input class="visually-hidden" type="checkbox"
+                        name="makita" id="makita" checked>
+                        <span class="checkbox-indicator"></span>
+                    </label>
                   </li>
                   <li class="filter-option">
-                    <label for="dewalt">Dewalt</label>
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
-                      name="dewalt" id="dewalt">
+                    <label for="dewalt" class="brands-label">Dewalt
+                      <input class="visually-hidden" type="checkbox"
+                        name="dewalt" id="dewalt">
+                        <span class="checkbox-indicator"></span>
+                    </label>
                   </li>
                   <li class="filter-option">
-                    <label for="hitashi">Hitachi</label>
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
-                      name="hitachi" id="hitashi">
+                    <label for="hitashi" class="brands-label">Hitachi
+                      <input class="visually-hidden" type="checkbox"
+                        name="hitachi" id="hitashi">
+                        <span class="checkbox-indicator"></span>
+                    </label>
                   </li>
                 </ul>
               </fieldset>
@@ -165,18 +175,18 @@
                 <legend>Питание:</legend>
                 <ul>
                   <li class="filter-option">
-
-                    <label for="accumulator">Аккумуляторные</label>
-                    <input class="filter-input filter-input-radio" type="radio"
-                    name="product-group" value="accumulator" id="accumulator" checked>
-
+                    <label for="accumulator" class="power-label">Аккумуляторные
+                      <input class="visually-hidden" type="radio"
+                      name="product-group" value="accumulator" id="accumulator" checked>
+                      <span class="radio-indicator"></span>
+                    </label>
                   </li>
                   <li class="filter-option">
-
-                    <label for="power-line">Сетевые</label>
-                    <input type="radio"
-                    name="product-group" value="power-line-supply" id="power-line">
-
+                    <label for="power-line" class="power-label">Сетевые
+                      <input type="radio"  class="visually-hidden"
+                      name="product-group" value="power-line-supply" id="power-line">
+                      <span class="radio-indicator"></span>
+                    </label>
                   </li>
                 </ul>
               </fieldset>
@@ -408,6 +418,9 @@
       </div>
     </footer>
     <section class="modal modal-add-cart">
+      <button class="modal-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
       <p>
         Товар добавлен в корзину!
       </p>
@@ -415,9 +428,7 @@
         <a href="#shopping-cart">Оформить заказ</a>
         <a href="#">Продолжить покупки</a>
       </p>
-      <button class="modal-button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
+
     </section>
   </body>
 </html>
