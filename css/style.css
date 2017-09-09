@@ -1196,16 +1196,16 @@ a {
   font-size: 18px;
   font-family: "PT Sans", Arial, sans-serif;
 }
-#btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"] {
+.btn-1:checked ~ .slider-controls label[for="btn-1"],
+.btn-2:checked ~ .slider-controls label[for="btn-2"] {
   background-color: #ee3643;
 }
-#btn-1:checked ~ .slider-inner .slider-slides {
+.btn-1:checked ~ .slider-inner .slider-slides {
   -webkit-transform: translate(0);
       -ms-transform: translate(0);
           transform: translate(0);
 }
-#btn-2:checked ~ .slider-inner .slider-slides {
+.btn-2:checked ~ .slider-inner .slider-slides {
   -webkit-transform: translate(-620px);
       -ms-transform: translate(-620px);
           transform: translate(-620px);
@@ -1629,9 +1629,9 @@ a {
 .servise-slider-controls li:nth-of-type(2) {
   border-bottom: 1px solid #4d637b;
 }
-#button-1:checked ~ .servise-slider-controls label[for="button-1"],
-#button-2:checked ~ .servise-slider-controls label[for="button-2"],
-#button-3:checked ~ .servise-slider-controls label[for="button-3"] {
+.button-1:checked ~ .servise-slider-controls label[for="button-1"],
+.button-2:checked ~ .servise-slider-controls label[for="button-2"],
+.button-3:checked ~ .servise-slider-controls label[for="button-3"] {
   color: #32425c;
 
   background-color: #ffffff;
@@ -1729,17 +1729,17 @@ a {
 
   text-align: center;
 }
-#button-1:checked ~ .slider-container .servises-list {
+.button-1:checked ~ .slider-container .servises-list {
   -webkit-transform: translate(0);
       -ms-transform: translate(0);
           transform: translate(0);
 }
-#button-2:checked ~ .slider-container .servises-list {
+.button-2:checked ~ .slider-container .servises-list {
   -webkit-transform: translate(-650px);
       -ms-transform: translate(-650px);
           transform: translate(-650px);
 }
-#button-3:checked ~ .slider-container .servises-list {
+.button-3:checked ~ .slider-container .servises-list {
   -webkit-transform: translate(-1300px);
       -ms-transform: translate(-1300px);
           transform: translate(-1300px);
