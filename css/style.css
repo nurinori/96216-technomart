@@ -1533,7 +1533,7 @@ a {
 /*________обертка________*/
 .servises-wrapper {
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 59px;
 
   background-color: #f4f8f9;
 }
@@ -1578,6 +1578,8 @@ a {
   background-color: #ba2732;
 }
 .servises p {
+  margin-right: 540px;
+
   font-size: 13px;
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
@@ -1685,9 +1687,28 @@ a {
 
   line-height: 36px;
 }
-.servises-list p {
+.servises-delivery {
+  flex-shrink: 1;
+  width: 275px;
+  margin: 0;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+
+  -ms-flex-negative: 1;
+}
+.servises-garantee {
   flex-shrink: 1;
   width: 380px;
+  margin: 0;
+  padding-bottom: 30px;
+  padding-left: 30px;
+
+  -ms-flex-negative: 1;
+}
+.servises-credit {
+  flex-shrink: 1;
+  width: 300px;
   margin: 0;
   padding-bottom: 30px;
   padding-left: 30px;
@@ -1768,21 +1789,22 @@ a {
   display: flex;
   justify-content: space-between;
   width: 940px;
-  min-height: 475px;
+  min-height: 476px;
   margin: 0 auto;
   padding: 0 10px;
 
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
 }
-.delivery-logistic:first-of-type {
+.delivery-logistic {
   width: 540px;
 }
-.delivery-logistic:last-of-type {
+.delivery-contacts {
   width: 300px;
   padding-left: 5px;
 }
-.delivery-logistic h3 {
+.delivery-logistic h3,
+.delivery-contacts h3 {
   margin: 0;
   margin-top: 17px;
   margin-bottom: 30px;
@@ -1794,12 +1816,19 @@ a {
   color: #000000;
   text-transform: uppercase;
 }
-.delivery-logistic p {
-  margin-bottom: 22px;
+.delivery-logistic p,
+.delivery-contacts p {
+  margin-bottom: 23px;
 
-  font-size: 14px;
+  font-size: 13px;
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
+}
+.delivery-logistic p:last-of-type {
+  padding-right: 120px;
+}
+.delivery-contacts p {
+  padding-right: 100px;
 }
 .delivery-company {
   margin: 0;
@@ -1828,7 +1857,8 @@ a {
 
   background-color: #ee3643;
 }
-.delivery-logistic a {
+.delivery-logistic a,
+.delivery-contacts a {
   display: block;
   width: 220px;
   padding-top: 10px;
@@ -1844,11 +1874,14 @@ a {
   border-radius: 3px;
 }
 .delivery-logistic a:hover,
-.delivery-logistic a:focus {
+.delivery-logistic a:focus,
+.delivery-contacts a:hover,
+.delivery-contacts a:focus {
   background-color: #ca2c37;
   outline: none;
 }
-.delivery-logistic a:active {
+.delivery-logistic a:active,
+.delivery-contacts a:active {
   background-color: #ba2732;
 }
 .map {
@@ -2102,11 +2135,16 @@ a {
   width: 284px;
   margin: 0;
   padding: 0;
-  padding-top: 37px;
-  padding-bottom: 27px;
 
   font-size: 16px;
   line-height: 18px;
+}
+.footer-company,
+.footer-developer p {
+  margin: 0;
+  padding: 0;
+  padding-top: 37px;
+  padding-bottom: 27px;
 }
 .footer-social {
   display: -webkit-box;
